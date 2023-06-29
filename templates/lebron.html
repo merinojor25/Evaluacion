@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width= 500, initial-scale=1">
+	<link rel="icon" href="https://cdn-images.threadless.com/threadless-media/artist_shops/shops/lakersnation/products/668530/original-1531812490-b18cbc4336be5c9cae58042d2fbe712a.png?v=3&d=eyJvbmx5X21ldGEiOiBmYWxzZSwgImZvcmNlIjogZmFsc2UsICJvcHMiOiBbWyJ0cmltIiwgW2ZhbHNlLCBmYWxzZV0sIHt9XSwgWyJyZXNpemUiLCBbXSwgeyJ3aWR0aCI6IDk5Ni4wLCAiYWxsb3dfdXAiOiBmYWxzZSwgImhlaWdodCI6IDk5Ni4wfV0sIFsiY2FudmFzX2NlbnRlcmVkIiwgWzEyMDAsIDEyMDBdLCB7ImJhY2tncm91bmQiOiAiMDAwMDAwIn1dLCBbInJlc2l6ZSIsIFs4MDBdLCB7fV0sIFsiY2FudmFzX2NlbnRlcmVkIiwgWzgwMCwgODAwLCAiI2ZmZmZmZiJdLCB7fV0sIFsiZW5jb2RlIiwgWyJqcGciLCA4NV0sIHt9XV19">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <meta charset="UTF-8">
+	<title>Los Lakers SHOWTIME</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'CSS\estilo.css' %}">
+</head>
+<body>
+	<script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	<header>
+    <div id="banner">
+      <div id="logo">
+         <a href="{% url 'index' %}"> 
+    <img src="https://logos-world.net/wp-content/uploads/2020/05/Los-Angeles-Lakers-Symbol.png" alt="Lakers">
+				</a>           
+		    </div>
+            <p><p style="text-align: center; color: white; font-weight: bold; font-size: xx-large;">SHOWTIME</p>
+		</p>
+          </div>
+		<h1>Los Angeles Lakers</h1>
+ {% include "navbar/navbar.html" %}
+	</header>
+    <body>
+        
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <h2>LeBron James</h2>
+        <br>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://phantom-marca.unidadeditorial.es/bad1443597b1fb7f7d4d4cf57f4ccee7/resize/1320/f/jpg/assets/multimedia/imagenes/2021/12/29/16407624737042.jpg" class="d-block w-100" alt="https://phantom-marca.unidadeditorial.es/bad1443597b1fb7f7d4d4cf57f4ccee7/resize/1320/f/jpg/assets/multimedia/imagenes/2021/12/29/16407624737042.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="https://estaticos-cdn.sport.es/clip/db57f5e5-7f86-47a4-824d-a11acadf3aed_alta-libre-aspect-ratio_default_0.jpg" class="d-block w-100" alt="https://estaticos-cdn.sport.es/clip/db57f5e5-7f86-47a4-824d-a11acadf3aed_alta-libre-aspect-ratio_default_0.jpg">
+              </div>
+              <div class="carousel-item">
+                <img src="https://cnnespanol.cnn.com/wp-content/uploads/2023/02/230201122448-lebron-james-record-historico-nba-maximo-anotador-todos-los-tiempos-deportes-00004727-full-169.jpg?quality=100&strip=info" class="d-block w-100" alt="https://cnnespanol.cnn.com/wp-content/uploads/2023/02/230201122448-lebron-james-record-historico-nba-maximo-anotador-todos-los-tiempos-deportes-00004727-full-169.jpg?quality=100&strip=info">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <main>
+            <section id="biografialebron">
+            </section>
+            <p><p style=" color: white;">LeBron Raymone James Sr.(Akron, Ohio, el 30 de diciembre de 1984) es un jugador de baloncesto estadounidense que actualmente pertenece a la plantilla de Los Angeles Lakers de la NBA. Con 2,06 metros de estatura, su posición es la de alero, pero su talento, versatilidad y poderío físico le permiten jugar tanto de base como de ala-pívot.<br>James es el máximo anotador de la historia de la NBA y es considerado como uno de los mejores jugadores de baloncesto del mundo y de la historia.
+                <br>Desde 2005 ha sido All-Star (del que resultó tres veces MVP) y ha formado parte de los Mejores Quintetos de la NBA, siendo elegido en trece ocasiones en el Primer Quinteto. En la 2006, James terminó segundo en la votación del MVP de la NBA 2005-06. Su premio individual más importante llegó el 4 de mayo de 2009, al ser nombrado MVP de la temporada 2008-09, galardón que ganaría también en las temporadas 2009-10, 2011-12 y 2012-13. En 2012, 2013, 2016 y 2020 fue campeón de la NBA y MVP de las Finales.
+            </p>
+            <div style="text-align: center;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dtaXHIoqNWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+          </main>
+          <footer>
+            <p><p style=" color: white;">© 2023 Los Angeles Lakers</p>
+          </footer>
+          <iframe width="100%" height="166" scrolling="yes" frameborder="no" allow="autoplay" autoplay="true" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/260230882&color=%23ffd300&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/t-bone-the-mask-of-kings" title="t-bone the mask of kings" target="_blank" style="color: #cccccc; text-decoration: none;">t-bone the mask of kings</a> · <a href="https://soundcloud.com/t-bone-the-mask-of-kings/2pac-ft-dr-dre-california-love" title="2pac ft. Dr dre - California love (instrumental)" target="_blank" style="color: #cccccc; text-decoration: none;">2pac ft. Dr dre - California love (instrumental)</a></div>
+        </body>
+        </html>

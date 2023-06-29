@@ -1,0 +1,141 @@
+body {
+    background-color: #552583;
+    color: #FDB927;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  header {
+    background-color: #FDB927;
+    color: #552583;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  nav a:hover {
+    color: #552583;
+  }
+  
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  section {
+    padding: 50px 0;
+  }
+  
+  section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  section p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .player-card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+    background-color: #FDB927;
+    color: #552583;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .player-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .player-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .player-card p {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .game-card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+    background-color: #552583;
+    color: #FDB927;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .game-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .game-card p {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  #banner {
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    position: relative;
+  }
+  
+  #logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+  }
+  
+  #logo img {
+    height: 80px;
+  }
+  

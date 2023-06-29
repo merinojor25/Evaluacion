@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width= 500, initial-scale=1">
+	<link rel="icon" href="https://cdn-images.threadless.com/threadless-media/artist_shops/shops/lakersnation/products/668530/original-1531812490-b18cbc4336be5c9cae58042d2fbe712a.png?v=3&d=eyJvbmx5X21ldGEiOiBmYWxzZSwgImZvcmNlIjogZmFsc2UsICJvcHMiOiBbWyJ0cmltIiwgW2ZhbHNlLCBmYWxzZV0sIHt9XSwgWyJyZXNpemUiLCBbXSwgeyJ3aWR0aCI6IDk5Ni4wLCAiYWxsb3dfdXAiOiBmYWxzZSwgImhlaWdodCI6IDk5Ni4wfV0sIFsiY2FudmFzX2NlbnRlcmVkIiwgWzEyMDAsIDEyMDBdLCB7ImJhY2tncm91bmQiOiAiMDAwMDAwIn1dLCBbInJlc2l6ZSIsIFs4MDBdLCB7fV0sIFsiY2FudmFzX2NlbnRlcmVkIiwgWzgwMCwgODAwLCAiI2ZmZmZmZiJdLCB7fV0sIFsiZW5jb2RlIiwgWyJqcGciLCA4NV0sIHt9XV19">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <meta charset="UTF-8">
+	<title>Los Lakers SHOWTIME</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'CSS\estilo.css' %}">
+</head>
+<body>
+	<script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	<header>
+    <div id="banner">
+      <div id="logo">
+         <a href="{% url 'index' %}"> 
+    <img src="https://logos-world.net/wp-content/uploads/2020/05/Los-Angeles-Lakers-Symbol.png" alt="Lakers">
+				</a>           
+		    </div>
+            <p><p style="text-align: center; color: white; font-weight: bold; font-size: xx-large;">SHOWTIME</p>
+		</p>
+          </div>
+		<h1>Los Angeles Lakers</h1>
+ {% include "navbar/navbar.html" %}
+	</header>
+  
+
+    <div jsname="odqvOd" class="iDYYme OiT5Ue" jscontroller="zNQQEb" jsdata="Yuolhe;_;Ac8UpY" jsaction="rcuQ6b:npT2md;XwT0l:hOPlV;xl1Fwc:fqTYlb" style="">
+        <div class="imso-loa imso-thor QMSMXe Wrsj9b" role="link" tabindex="0" jsaction="hOPlV" style="background:#542581" data-ved="2ahUKEwi9_ouuqqv-AhVnq5UCHUZgDMMQuUt6BAgHEAI">
+            <div class="SwsxUd"><g-img class="t7NTy"><img id="dimg_1" src="data:image/png;base64,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" class="YQ4gaf zr758c wA1Bge" height="32" width="32" alt="" data-atf="1" data-frt="0" data-deferred="2"></g-img>
+                <div class="LOaav">
+                    <div class="GLbw8e q8U8x imso-ani" aria-level="3" role="heading" aria-label="Los Angeles Lakers" style="">
+                        <div aria-hidden="true" class="CnPMPd gsrt">
+                            <div class="N0LMJe ellipsisize">
+                                </div>
+                            <div class="S9Uogc">
+                                <div class="YwLJKc">
+                                </div>
+                                <div class="ofy7ae" style="background:#542581">
+                                    <h2><h2 style=" color: white;">Los
+                                    Angeles
+                                    Lakers</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h1>Calendario de los Lakers</h1>
+                    <div id="calendario"></div>
+                    
+                    <style>
+                      table {
+                        font-family: Arial, Helvetica, sans-serif;
+                        border-collapse: collapse;
+                        width: 100%;
+                        margin-bottom: 20px;
+                      }
+                    
+                      th, td {
+                        border: 1px solid #ddd;
+                        padding: 8px;
+                      }
+                    
+                      th {
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                        text-align: left;
+                        background-color: #4d045f;
+                        color: rgb(0, 0, 0);
+                      }
+                    
+                      tr:nth-child(even) {
+                        background-color: #303030;
+                      }
+                    </style>
+                    
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script> 
+                      // Hacer la solicitud HTTP al servidor
+                      $.getJSON('https://api.sportsdata.io/v3/nba/scores/json/SchedulesBasic/2023?key=21dd64220da0496f99911a292ed817bb', function(data) {
+                        // Procesar la respuesta JSON y agregar los datos al HTML
+                        var calendario = $('#calendario');
+                        var tabla = $('<table>');
+                        tabla.append('<thead><tr><th>Fecha</th><th>Equipo local</th><th>Equipo visitante</th><th>Resultado</th></tr></thead>');
+                        var tbody = $('<tbody>');
+                        $.each(data, function(index, game) {
+                          if (game.HomeTeamID === 27 || game.AwayTeamID === 27) {
+                            var fecha = new Date(game.DateTime).toLocaleDateString();
+                            var equipoLocal = game.HomeTeam;
+                            var equipoVisitante = game.AwayTeam;
+                            var resultado = game.Status === 'Final' ? game.HomeTeamScore + '-' + game.AwayTeamScore : 'Pendiente';
+                            var tr = $('<tr>');
+                            tr.append('<td>' + fecha + '</td>');
+                            tr.append('<td>' + equipoLocal + '</td>');
+                            tr.append('<td>' + equipoVisitante + '</td>');
+                            tr.append('<td>' + resultado + '</td>');
+                            tbody.append(tr);
+                          }
+                        });
+                        tabla.append(tbody);
+                        calendario.append(tabla);
+                      });
+                    </script>
+                    
+                    
+    <p></p><p style=" color: white;">© 2023 Los Angeles Lakers</p>	</footer>
+	<iframe width="100%" height="166" scrolling="yes" frameborder="no" allow="autoplay" autoplay="true" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/260230882&color=%23ffd300&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/t-bone-the-mask-of-kings" title="t-bone the mask of kings" target="_blank" style="color: #cccccc; text-decoration: none;">t-bone the mask of kings</a> · <a href="https://soundcloud.com/t-bone-the-mask-of-kings/2pac-ft-dr-dre-california-love" title="2pac ft. Dr dre - California love (instrumental)" target="_blank" style="color: #cccccc; text-decoration: none;">2pac ft. Dr dre - California love (instrumental)</a></div>
+</body></html>
